@@ -1,11 +1,9 @@
 import streamlit as st
 import time  # 시간을 사용해 고유 키 생성
 import os
-from dotenv import load_dotenv
 import openai
 import asyncio
-load_dotenv()
-openai.api_key = os.environ['OPENAI_API_KEY']
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 
 
